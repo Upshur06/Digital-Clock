@@ -1,50 +1,91 @@
 
-var HH = document.getElementById("HH")
-var MM = document.getElementById("MM")
-var SS = document.getElementById("SS")
+// var time = new Date();
+// var hours = time.getHours();
+// var minutes = time.getMinutes();
+// var seconds = time.getSeconds();
 
 
-setInterval(timing, 1000);
+// var clock = document.getElementById("clock");
+// var hex_color = document.getElementById("hex_color");
+//
+//
+// function hexClock(){
+//   var time = new Date();
+//   var hours = time.getHours().toString();
+//   var minutes = time.getMinutes().toString();
+//   var seconds = time.getSeconds().toString();
+//
+//
+//     if (hours.length < 2){
+//       hours = "0" + hours
+//     }
+//
+//     if (minutes.length < 2){
+//       minutes = "0" + minutes
+//     }
+//
+//     if (seconds.length < 2){
+//       soconds = "0" + seconds
+//     }
+//
+//     var clockStr = hours + ":" + minutes + ":" + seconds;
+//     var hex_colorStr = "#" + hours + minutes + seconds;
+//
+//     clock.textContent = clockStr;
+//     hex_color.textContent = hex_colorStr;
+//
+//     document.body.style.background = hex_colorStr;
+// }
+// hexClock();
+//
+// setInterval(hexClock), 1000;
 
+
+// function timing(){
+  // var time = new Date();
+  // console.log(time.getHours());
+  // console.log(time.getMinutes());
+  // console.log(time.getSeconds());
+
+  // var HH = date.getHours();
+  // var MM = date.getMinutes();
+  // var SS = date.getSeconds();
+
+
+var clock = document.getElementById("clock");
+var background = document.getElementById("background");
+var hexcolor = document.getElementById("hexcolor");
 
 
 function timing(){
-  var date = new Date()
-  var sec = date.getSeconds()
-  var min = date.getMinutes()
-  var hour = date.getHours()
+  var time = new Date();
+  var hours = time.getHours().toString();
+  var minutes = time.getMinutes().toString();
+  var seconds = time.getSeconds().toString();
 
 
-  if (sec < 10){
-    SS.innerHTML = "0" + sec
-  }else {
-     SS.innerHTML = sec
+  if (hours.length < 2){
+    hours = "0" + hours;
   }
 
-  if (min < 10){
-    MM.innerHTML = "0" + min
-  }else {
-     MM.innerHTML = min
+  if (minutes.length < 2){
+    minutes = "0" +  minutes;
   }
 
-  if (hour < 10){
-    HH.innerHTML = "0" + hour
-  }else {
-     HH.innerHTML = hour
+  if (seconds.length < 2){
+    seconds = "0" + seconds;
   }
-// background color
-var background = document.getElementById("background")
-var hexnum = document.getElementById("hexnum")
 
-// setInterval(hexClock, 1000);
+var clockStr = hours + ":" + minutes + ":" + seconds;
+var hexcolorStr = "#" + hours + minutes + seconds;
 
-function output(){
-   var background = document.body.style.background()
-   // var hexnum = "#" + hour + min + sec;
+clock.textContent = clockStr;
+hexcolor.textContent = hexcolorStr;
 
-   if(sec >= 0 && min >= 0 && hour >=0){
-     hexnum.innerHTML = "#" + hour + min + sec
-   }
-}
+background.style.backgroundColor = hexcolorStr;
 
 }
+timing();
+
+
+setInterval(timing, 1000);

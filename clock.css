@@ -1,51 +1,54 @@
-/* wapper box */
-#wrapper{
-  /* border:2px solid; */
-  width: 60%;
-  height: 200px;
-  margin-left: 120px;
+/* body{
   margin-top: 200px;
+  text-align: center;
+  color: white;xs
+
 }
 
-/* hour box */
-#HH{
-  border:3px solid;
-  width: 200px;
-  height: 150px;
-  margin-left: 50px;
-  margin-top: 20px;
+#clock{
+  font-weight: 300;
+  font-size: 100px;
 }
 
-/* minutes box */
-#MM{
-  border:3px solid blue;
-  width: 200px;
-  height: 150px;
-  margin-left: 260px;
-  margin-top: -153px;
-}
+#hex_color{
+  font-size: 30px;
+} */
 
-/* seconds bo */
-#SS{
-  border:3px solid green;
-  width: 200px;
-  height: 150px;
-  margin-left: 470px;
-  margin-top: -153px;
-}
 
+
+/* wapper box */
 #background{
-  border: 1px solid;
-  width: 100%;
-  height: 900px;
-  position: fixed;
-  background-color: none;
+    border: 1px solid;
+    width: 100%;
+    height: 800px;
+    /* background-color: red; */
 }
 
-#hexnum{
-  border: 1px solid;
-  width: 25%;
-  height: 100px;
-  margin-left: 290px;
-  font-size: 2em;
+#wrapper{
+    /* border: 1px solid; */
+    width: 50%;
+    height: 200px;
+    margin-left: 360px;
+    margin-top: 250px;
+}
+
+
+#clock{
+  border: 2px solid green;
+  width: 99%;
+  height: 170px;
+  text-align: center;
+  font-size: 110px;
+}
+
+
+
+#hexcolor{
+  border: 2px solid;
+  width: 45%;
+  height: 80px;
+  margin-left: 382px;
+  text-align: center;
+  font-size: 30px;
+
 }
